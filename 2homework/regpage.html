@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Страница регистрации</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>Регистрация пользователя</h3>
+	<form action="../startpage.html" 
+	      enctype="multipart/form-data"
+		  autocomplete="on">
+		<fieldset>
+			<legend>Имя пользователя/Логин</legend>
+			<input type="text" 
+				   id="login"
+				   required
+				   minlength="3"
+				   maxlength="15"
+				   placeholder="Введите логин">
+		</fieldset>
+		<fieldset>
+			<legend>Адрес электронной почты</legend>
+			<input type="email" 
+				   id="mail"
+				   required
+				   placeholder="Введите e-mail">
+		</fieldset>
+		<fieldset>
+			<legend>Пароль</legend>
+			<input type="password" 
+				   id="pass1"
+				   required
+				   minlength="7"
+				   placeholder="Введите пароль">
+		</fieldset>
+		<fieldset>
+			<legend>Повторите пароль</legend>
+			<input type="password" 
+				   id="pass2"
+				   required
+				   minlength="7"
+				   placeholder="Повторите пароль">
+		</fieldset>
+		<fieldset>
+			<legend>Загрузить изображение</legend>
+			<input type="file" 
+				   name="image"
+				   accept="image/*">
+		</fieldset>
+		<fieldset>
+			<button type="submit">Зарегистрироваться</button>
+		</fieldset>
+	</form>
+	<br><a href="../startpage.html">На главную</a>
+</body>
+</html>
