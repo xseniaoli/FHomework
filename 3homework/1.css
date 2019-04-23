@@ -1,0 +1,18 @@
+.output {
+	border: 2px solid #ff798b;
+	background-color: #ddc8af;
+	text-decoration: none;
+	padding: 1px;
+}
+.author {
+	text-decoration-line: none;
+	color: #00939b;
+}
+.padding {
+	padding-bottom: 30px; 
+}
+nav li {
+	list-style-type: none;
+    display: inline-block;
+    border: 3px solid violet;
+}

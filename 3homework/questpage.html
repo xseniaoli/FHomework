@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Отзыв</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3><em>Оставьте Ваш отзыв</em></h3>
+	<form action="../startpage.html" 
+	      enctype="multipart/form-data"
+		  autocomplete="on">
+		<fieldset>
+			<legend>Имя пользователя, которое будет отображаться на сайте</legend>
+			<input type="text" 
+				   id="login"
+				   minlength="3"
+				   maxlength="15"
+				   placeholder="Введите имя"
+				   required>
+		</fieldset>
+		<fieldset>
+			<legend>Адрес электронной почты</legend>
+			<input type="email" 
+				   id="mail"
+				   placeholder="Введите e-mail">
+		</fieldset>
+		<fieldset>
+			<legend>Ваш пол</legend>
+			<label><input type="radio" name="sex">Женщина</label>
+			<label><input type="radio" name="sex" >Мужчина</label>
+ 			<label><input type="radio" name="sex">Пельмешка</label>
+		</fieldset>
+		<fieldset>
+			<legend>Как бы Вы оценили дизайн сайта по шкале от 1 до 5?</legend>
+			<p><em> 1 - Однообразный и неинтерактивный, 5 - Красочный и многофункциональный</em> </p>
+			<input type="number" 
+				   id="num"
+				   min="1" 
+				   max="5"  
+				   required>
+		</fieldset>
+		<fieldset>
+			<legend>Что бы Вы хотели видеть на нашем сайте?</legend>
+			<div>
+				<ul style="list-style-type: none">
+					<li><label><input name="want[]" type="checkbox">Больше рецептов</label></li>
+					<li><label><input name="want[]" type="checkbox">Больше видео</label></li>
+					<li><label><input name="want[]" type="checkbox">Больше статей о питании</label></li>
+					<li><label><input name="want[]" type="checkbox">Возможность оставлять комментарии</label></li>
+					<li><label><input name="want[]" type="checkbox">Другое (введите ответ)</label></li>
+				</ul>
+			</div>
+			<br><input type="text" 
+					   name="other" 
+					   autofocus  
+					   placeholder="Ввести текст">
+		</fieldset>
+		<fieldset>
+			<legend>Дата и время заполнения</legend>
+			<input type="datetime-local" 
+				   name="date_time">
+		</fieldset>
+		<br><button type="submit">Оставить отзыв</button>
+	</form>
+	<br><a href="../startpage.html">На главную</a>
+</body>
+</html>

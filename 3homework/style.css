@@ -1,0 +1,8 @@
+.bg {
+	background-image: url("img/deer.jpg");
+	background-size: 450px auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 15px 10px;
+}
+
