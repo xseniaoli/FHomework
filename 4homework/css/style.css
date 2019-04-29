@@ -1,0 +1,44 @@
+@import url("./grid.css");
+
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.block {
+	border: 1px solid black;
+	height:100px;
+	margin: 5px;
+	text-align: center;
+	top: 25px;
+}
+
+img {
+	height: 300px;
+}
+
+.slaider {
+	position: relative;
+	width: 100%;
+}
+
+.slaider img {
+	display: none;
+	z-index: 1;
+}
+
+.slaider .active {
+	display: block;
+}
+
+h3 {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+}
+
