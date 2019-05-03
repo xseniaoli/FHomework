@@ -1,0 +1,105 @@
+nav {
+	margin: 0 auto;
+}
+
+nav ul {
+	list-style-type: none;
+	position: relative;
+}
+
+nav ul li {
+	margin: 0px -7px 0 0;
+	display:inline-block;
+	background-color: pink;
+}
+			
+nav a {
+	display: block;
+	padding: 0 10px;
+	color: black;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+			
+nav a:hover {
+	background-color: aquamarine;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+			
+nav ul li:hover > ul {
+	display: inherit;
+}
+			
+nav ul ul li {
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+.modal {
+	margin: 0; 
+	padding: 0; 
+	position: fixed;
+	top:0; 
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0,0,0,0.1); 
+	z-index:100;
+	opacity:0; 
+	pointer-events: none;
+
+}
+
+
+.modal:target {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+
+.modalwindow {
+	width: 100%;
+	max-width: 300px;
+	margin: 10% auto;
+	padding: 2%;
+	background: #b72f2b;
+	border-radius: 20px;
+	box-shadow: 15px 15px 30px rgba(0,0,0,1); 
+}
+
+
+.modalwindow h3 {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+
+.modalwindow p {
+	text-align: center;
+	padding: 0;
+	margin: 4% 0 8% 0;
+}
+
+.modalwindow a {
+	display: block;
+	color: #fff;
+	background: #393a4e;
+	padding: 2%;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.modalwindow a:hover {
+	background: #b2b6cc;
+}
